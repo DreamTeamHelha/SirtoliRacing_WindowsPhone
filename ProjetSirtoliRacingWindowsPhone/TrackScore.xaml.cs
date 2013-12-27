@@ -23,7 +23,7 @@ namespace ProjetSirtoliRacingWindowsPhone
             if(e.Error == null)
             {
                 JsonArray array = (JsonArray)JsonArray.Parse(e.Result);
-                JsonValue [] arraySorted = array.OrderBy(val => val["Time"].ToString()).ToArray();
+                JsonValue [] arraySorted = array.OrderBy(val => (int)val["Time"]).ToArray();
                 foreach(JsonValue score in arraySorted)
                 {
           
