@@ -49,7 +49,7 @@ namespace ProjetSirtoliRacingWindowsPhone
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             String name = (string)PhoneApplicationService.Current.State["name"]; ;
-            TrackName.Text = name;
+            TrackName.Text = name.Replace("_"," ");
 
             //Ajout des colonnes à la grille
             ContentPanel.ColumnDefinitions.Add(new ColumnDefinition());

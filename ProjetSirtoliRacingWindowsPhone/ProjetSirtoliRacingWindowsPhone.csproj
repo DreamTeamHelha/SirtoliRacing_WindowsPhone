@@ -103,7 +103,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Score.cs" />
     <Compile Include="TrackScore.xaml.cs">
       <DependentUpon>TrackScore.xaml</DependentUpon>
     </Compile>
